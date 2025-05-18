@@ -1,0 +1,77 @@
+/* style.css */
+
+/* 基本样式和背景 */
+body {
+    font-family: 'Arial', sans-serif; /* 使用一个常见的无衬线字体 */
+    line-height: 1.6; /* 标准行高 */
+    margin: 0; /* 移除默认的 body 外边距 */
+    background-color: #282c34; /* 深色背景 */
+    color: #ffffff; /* 白色文字 */
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 在主轴（水平）方向居中 */
+    align-items: center; /* 在交叉轴（垂直）方向居中 */
+    min-height: 100vh; /* 确保 body 至少占满整个视口高度 */
+    padding: 20px; /* 添加一些内边距 */
+    box-sizing: border-box; /* 将内边距和边框包含在元素的总宽度和高度内 */
+}
+
+/* 容器样式 */
+.container {
+    max-width: 600px; /* 限制容器最大宽度 */
+    width: 100%; /* 容器宽度最大为父容器（body）的 100% */
+    background-color: #3a404a; /* 容器使用稍浅的深色背景 */
+    padding: 30px; /* 容器内部内边距 */
+    border-radius: 8px; /* 容器圆角 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+    text-align: center; /* 容器内的文字居中 */
+}
+
+/* 标题样式 */
+h1 {
+    color: #61dafb; /* React 官方蓝色作为标题颜色 */
+    margin-top: 0; /* 移除默认的顶部外边距 */
+    margin-bottom: 20px; /* 标题下方外边距 */
+    font-size: 2.5em; /* 标题字号 */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* 添加文字阴影 */
+}
+
+/* 段落样式 */
+p {
+    font-size: 1.1em; /* 段落字号稍大 */
+    margin-bottom: 15px; /* 段落下方外边距 */
+    font-weight: bold; /* 文字加粗 */
+    color: #cccccc; /* 稍浅的文字颜色 */
+}
+
+/* 列表样式 */
+ul {
+    list-style: none; /* 移除默认的列表前标记（点） */
+    padding: 0; /* 移除默认的左内边距 */
+    margin: 0; /* 移除默认的外边距 */
+}
+
+/* 列表项样式 */
+li {
+    margin-bottom: 10px; /* 列表项之间添加下外边距 */
+}
+
+/* 链接样式 */
+li a {
+    display: block; /* 让链接作为块级元素，填充列表项宽度，使整个区域可点击 */
+    text-decoration: none; /* 移除链接下划线 */
+    color: #ffffff; /* 链接文字颜色 */
+    background-color: #4f5b6b; /* 链接块的背景颜色 */
+    padding: 12px 20px; /* 链接块的内边距 */
+    border-radius: 5px; /* 链接块的圆角 */
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease; /* 添加过渡效果 */
+    text-align: left; /* 链接文字左对齐 */
+    border: 1px solid #61dafb; /* 添加边框，使用主题蓝色 */
+}
+
+/* 链接悬停效果 */
+li a:hover {
+    background-color: #61dafb; /* 悬停时改变背景颜色 */
+    color: #282c34; /* 悬停时改变文字颜色 */
+    transform: translateY(-2px); /* 悬停时向上微移 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 悬停时添加阴影 */
+}
