@@ -97,6 +97,6 @@ li a:hover {
     transform: scale(1.05);
 }
 .email-link span:last-child {
-    font-size: 0.9em;
-    color: #ddd;
+    font-size: 0.6em;
+    color: #003753;
 }
