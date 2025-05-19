@@ -75,3 +75,24 @@ li a:hover {
     transform: translateY(-2px); /* 悬停时向上微移 */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 悬停时添加阴影 */
 }
+
+/* 固定位置的邮件链接 */
+.email-link {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #61dafb;
+    color: #282c34;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.email-link:hover {
+    background-color: #4fa3d1;
+    transform: scale(1.05);
+}
